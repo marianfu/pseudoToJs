@@ -1,21 +1,21 @@
 {
-  "name": "natural-language",
+  "name": "pseudoToJs",
   "version": "0.1.0",
-  "description": "Natural Programming Language",
+  "description": "Pseudocode to Javascript",
   "main": "app.js",
   "scripts": {
     "test": "./node_modules/.bin/jasmine-node test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marianfu/natural-language.git"
+    "url": "git+https://github.com/marianfu/pseudoToJs.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marianfu/natural-language/issues"
+    "url": "https://github.com/marianfu/pseudoToJs/issues"
   },
-  "homepage": "https://github.com/marianfu/natural-language#readme",
+  "homepage": "https://github.com/marianfu/pseudoToJs#readme",
   "dependencies": {
     "escodegen": "^1.8.0",
     "express": "^4.14.0",

@@ -1,7 +1,7 @@
 var express = require('express');
 var _ = require('underscore');
 var pegjs = require('pegjs');
-var Parser = require('./src/Parser');
+var Parser = require('./src/parser');
 var Escodegen = require('escodegen');
 var app = express();
 

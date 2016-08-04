@@ -1,2 +1,2 @@
-# natural-language
-Natural Programming Language
+# Pseudocode to Javascript
+
