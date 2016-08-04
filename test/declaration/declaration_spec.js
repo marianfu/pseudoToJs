@@ -1,5 +1,5 @@
 var Escodegen = require('escodegen');
-var NaturalLanguage = require('../../src/Parser');
+var Parser = require('../../src/parser');
 
 describe("Variable declaration", function () {
 
@@ -7,7 +7,7 @@ describe("Variable declaration", function () {
 
     it("should return 'var a = 1' ", function () {
 
-        pseudoCode = NaturalLanguage.parse("var a es 1;");
+        pseudoCode = Parser.parse("var a es 1;");
         javascriptExpected = "var a = 1;"
         javascriptGenerated = Escodegen.generate(pseudoCode);
 
@@ -16,7 +16,7 @@ describe("Variable declaration", function () {
 
     it("should return 'var a=1, b=2, c=3;'", function() {
 
-        pseudoCode = NaturalLanguage.parse("var a es 1, b es 2, c es 3;");
+        pseudoCode = Parser.parse("var a es 1, b es 2, c es 3;");
         javascriptExpected = "var a = 1, b = 2, c = 3;"
         javascriptGenerated = Escodegen.generate(pseudoCode);
 

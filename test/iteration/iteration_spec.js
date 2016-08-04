@@ -1,5 +1,5 @@
 var Escodegen = require('escodegen');
-var NaturalLanguage = require('../../src/Parser');
+var Parser = require('../../src/parser');
 
 describe("Iteration", function () {
 
@@ -7,7 +7,7 @@ describe("Iteration", function () {
 
     it("should return 'for ...' ", function () {
 
-        pseudoCode = NaturalLanguage.parse("por cada(e en elementos){}");
+        pseudoCode = Parser.parse("por cada(e en elementos){}");
         javascriptExpected = "for (e in elementos) {}".replace(/\s+/g, '');
         javascriptGenerated = Escodegen.generate(pseudoCode);
         javascriptGenerated = javascriptGenerated.replace(/\s+/g, '');
