@@ -1,0 +1,28 @@
+{
+  "name": "natural-language",
+  "version": "0.1.0",
+  "description": "Natural Programming Language",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianfu/natural-language.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marianfu/natural-language/issues"
+  },
+  "homepage": "https://github.com/marianfu/natural-language#readme",
+  "dependencies": {
+    "escodegen": "^1.8.0",
+    "express": "^4.14.0",
+    "pegjs": "^0.9.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
